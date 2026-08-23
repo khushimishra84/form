@@ -1,0 +1,162 @@
+/* General Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page Background */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+    padding: 30px 15px;
+}
+
+/* Glassmorphism Container */
+.contact-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(16px);
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 24px;
+    padding: 40px;
+    width: 100%;
+    max-width: 680px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 32px;
+    background: linear-gradient(90deg, #ff007f, #7928ca, #00dfd8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+.header p {
+    color: #cbd5e1;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+/* Grid Layout */
+.form-row {
+    display: flex;
+    gap: 18px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+/* Labels */
+label {
+    color: #f1f5f9;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Input Controls */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 14px 16px;
+    background: rgba(15, 23, 42, 0.7);
+    border: 2px solid #334155;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #64748b;
+}
+
+/* Neon Glow Focus Effects */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #ff007f;
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.5);
+    background: rgba(15, 23, 42, 0.9);
+}
+
+/* Custom Dropdown Option Colors */
+select option {
+    background-color: #1e1b4b;
+    color: #ffffff;
+}
+
+/* Radio Button Styling */
+.radio-section {
+    margin-bottom: 25px;
+}
+
+.section-title {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.radio-options {
+    display: flex;
+    gap: 20px;
+}
+
+.radio-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #e2e8f0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.radio-btn input {
+    accent-color: #00dfd8;
+    transform: scale(1.2);
+}
+
+/* Crazy Glowing Button */
+.glow-btn {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(90deg, #ff007f, #7928ca, #00dfd8);
+    background-size: 200% auto;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 20px rgba(121, 40, 202, 0.4);
+}
+
+.glow-btn:hover {
+    background-position: right center;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 0, 127, 0.6);
+}
+
+.glow-btn:active {
+    transform: translateY(0);
+}
